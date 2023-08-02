@@ -1,0 +1,96 @@
+body {
+    margin: 0rem;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+}
+
+header a img {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);    
+}
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.blogBody {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    border-right: 1px solid black;
+}
+
+.profile {
+    margin-bottom: 3vh;
+}
+
+#profileImage {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 15px;
+}
+
+#profileName {
+    font-size: 1.5rem;
+}
+
+#profileIntroduction {
+    font-size: 1.2rem;
+}
+
+.goToAnotherBlog .friendList {
+    list-style: none;
+}
+
+.friendList li a {
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    width: 80%;
+    margin: 0vh 2.5vw 0vh 2.5vw;
+}
+
+.contentsFrame {
+    overflow: scroll;
+    height: 69vh;
+    border: 1px solid black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    color: white;
+    background-color: black;
+}
+
+footer p {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, 50%);
+}
