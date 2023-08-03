@@ -122,6 +122,11 @@
         width: 80%;
     }
 
+    hr {
+        border: none;
+        border-bottom: 1px solid #8C8C8C;
+    }
+
     .articleTitle, .articleDate {
         text-align: center;
     }
@@ -130,7 +135,7 @@
         overflow-x: hidden; /* 가로 스크롤 숨김 */
         overflow-y: auto; /* 세로 스크롤만 보이도록 설정 */
         height: 69vh;
-        border: 1px solid black;
+        border: 1px solid #8C8C8C;
     }
 
     .contents {
