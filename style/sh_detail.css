@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+
 @media screen and (min-width: 320px),
     screen and (min-height: 479px) 
     and (orientation: landscape) {
     body {
         margin: 0rem;
         background-color: white;
+        font-family: 'Gaegu', cursive;
     }
     
     header {
@@ -84,15 +87,15 @@
     }
     
     #profileName {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     
     #profileIntroduction {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .goToAnotherBlog {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
     
     .goToAnotherBlog .friendList {
@@ -201,11 +204,15 @@
     }
 
     #profileName {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    #profileIntroduction {
+        font-size: 1.16rem;
     }
 
     .goToAnotherBlog {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .goToAnotherBlog .friendList {
@@ -237,15 +244,15 @@
     }
 
     #profileName {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     
     #profileIntroduction {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .goToAnotherBlog {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .friendList li a img {
