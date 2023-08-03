@@ -138,6 +138,26 @@
         align-items: center; /* 가로 방향 중앙 정렬 */
         justify-content: center; /* 세로 방향 중앙 정렬 */
     }
+
+    .contents p {
+        text-align: center;
+    }
+
+    .emoji {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .catImg, .video {
+        width: 40%;
+        height: 40%;
+        border-radius: 5px;
+    }
+
+    .talk {
+        font-size: 0.8rem;
+        color: gray;
+    }
     
     footer {
         position: fixed;
