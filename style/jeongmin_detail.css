@@ -374,9 +374,10 @@ li {
 
 
   .main_footer {
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    padding: 0vh 5vw 0vh 3vw;
+    padding: 1vh 5vw;
   }
 
   button {
@@ -389,6 +390,10 @@ li {
     border-radius: 2em;
     position: relative;
 
+  }
+
+  button:active{
+    transform: translateY(1px);
   }
 
   .heart_btn {
@@ -598,11 +603,6 @@ li {
   .side_profile p {
     margin: 5px 0 13px 0;
     font-size: 13px;
-  }
-
-  .main_footer {
-    width: 90%;
-    padding: 0 5vw;
   }
 
   footer .footer_wrap ul li a p {
