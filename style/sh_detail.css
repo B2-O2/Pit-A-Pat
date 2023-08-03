@@ -13,6 +13,23 @@
         background-color: black;
     }
 
+    .visible {
+        display: block;
+        position: absolute;
+        left: 0; /* aside를 왼쪽으로 이동 */
+        top: 4rem; /* aside를 헤더 아래로 이동 */
+        bottom: 0; /* aside의 높이를 꽉 채운다. */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+        color: white;
+        background-color: black;
+        box-shadow: 5px 0 5px gray;
+    }
+
     header a.profileMenu {
         position: absolute;
         top: 50%;
@@ -52,7 +69,7 @@
         justify-content: center;
         text-align: center;
         width: 20%;
-        border: 1px solid black; */
+        border-right: 1px solid black; */
         display: none;
     }
     
@@ -61,21 +78,21 @@
     }
     
     #profileImage {
-        width: 7rem;
-        height: 7rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 15px;
     }
     
     #profileName {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
-    /* #profileIntroduction {
-        font-size: 1rem;
-    } */
+    #profileIntroduction {
+        font-size: 0.8rem;
+    }
 
     .goToAnotherBlog {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     
     .goToAnotherBlog .friendList {
@@ -84,7 +101,7 @@
     
     .friendList li a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     
     article {
@@ -139,13 +156,27 @@
         justify-content: space-between;
     }
 
-    aside {
+    .visible {
+        position: static;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         width: 20%;
         border-right: 1px solid black;
+        /* box-shadow: none; */
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+        color: white;
+        border-right: 1px solid black;
+        background-color: black;
+        box-shadow: 5px 0 5px gray;
     }
 
     .profile {
@@ -172,7 +203,7 @@
 
     .friendList li a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
     article {
