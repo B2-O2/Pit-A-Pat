@@ -127,7 +127,8 @@
     }
     
     .contentsFrame {
-        overflow: scroll;
+        overflow-x: hidden; /* 가로 스크롤 숨김 */
+        overflow-y: auto; /* 세로 스크롤만 보이도록 설정 */
         height: 69vh;
         border: 1px solid black;
     }
