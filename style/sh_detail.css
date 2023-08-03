@@ -97,11 +97,22 @@
     
     .goToAnotherBlog .friendList {
         list-style: none;
+        padding-left: 0rem;
     }
     
     .friendList li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.6rem;
         text-decoration: none;
         color: white;
+    }
+
+    .friendList li a img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.6rem;
     }
     
     article {
@@ -206,6 +217,11 @@
         color: white;
     }
 
+    .friendList li a img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
     article {
         width: 80%;
         margin: 0vh 2.5vw 0vh 2.5vw;
@@ -230,5 +246,10 @@
 
     .goToAnotherBlog {
         font-size: 1rem;
+    }
+
+    .friendList li a img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
