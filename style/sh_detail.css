@@ -158,6 +158,10 @@
         font-size: 0.8rem;
         color: gray;
     }
+
+    #catFace:hover {
+        content: url("../img/sh_cat_face2.png");
+    }
     
     footer {
         position: fixed;
