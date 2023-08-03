@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Details</title>
   <link rel="stylesheet" href="style/jeongmin_detail.css">
-
+  <script>
+    window.onload = function () {
+      let btn = document.getElementsByClassName("heart_btn")[0];
+      btn.addEventListener('click', function () {
+        document.getElementsByClassName('heart_icon')[0].classList.toggle('turnning');
+      })
+    }
+  </script>
 </head>
 
 <body>
@@ -82,9 +89,11 @@
             <button>+ 구독하기</button>
           </aside>
         </div>
-        
+
         <div class="main_footer">
-          <button>❤️ 9999</button>
+          <button class="heart_btn">
+            <div class="heart_icon">❤️</div> 9999
+          </button>
           <button>💬 댓글 100</button>
         </div>
       </div>

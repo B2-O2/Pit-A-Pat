@@ -267,11 +267,11 @@ li {
     z-index: -10;
   }
 
-  header img{
+  header img {
     width: 20vw;
     position: absolute;
     z-index: 100;
-    top:10px;
+    top: 10px;
     left: 20px;
   }
 
@@ -374,9 +374,10 @@ li {
 
 
   .main_footer {
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    padding: 0vh 5vw 0vh 3vw;
+    padding: 1vh 5vw;
   }
 
   button {
@@ -387,7 +388,19 @@ li {
     color: white;
     padding: 7px 10px;
     border-radius: 2em;
+    position: relative;
+
   }
+
+  button:active{
+    transform: translateY(1px);
+  }
+
+  .heart_btn {
+    width: 80px;
+    text-align: right;
+  }
+
 
   button:hover {
     background-color: white;
@@ -436,6 +449,32 @@ li {
 
   .footer_wrap .nav_now {
     font-weight: bold;
+  }
+
+  /*버튼 눌렸을 시 아이콘 돌아가는 애니메이션*/
+  @keyframes notificationAnimaion {
+    0% {
+      transform: none;
+    }
+
+    50% {
+      transform: rotateY(360deg);
+    }
+
+    100% {
+      transform: none;
+    }
+  }
+
+  .heart_icon {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+
+  }
+
+  .turnning {
+    animation: notificationAnimaion 2s ease-in-out 1;
   }
 }
 
@@ -513,11 +552,11 @@ li {
     margin: 0 auto;
   }
 
-  header img{
+  header img {
     width: 10vw;
     position: absolute;
     z-index: 100;
-    top:10px;
+    top: 10px;
     left: 20px;
   }
 
@@ -547,7 +586,7 @@ li {
     display: block;
     width: 225px;
     height: 250px;
-    background-color:#FBFBFB;
+    background-color: #FBFBFB;
     padding: 20px 5px 10px 5px;
     border-radius: 10px;
     position: absolute;
@@ -561,17 +600,12 @@ li {
     border-radius: 50%;
   }
 
-  .side_profile p{
+  .side_profile p {
     margin: 5px 0 13px 0;
     font-size: 13px;
   }
 
-  .main_footer {
-    width: 90%;
-    padding: 0 5vw;
-  }
-
-  footer .footer_wrap ul li a p{
+  footer .footer_wrap ul li a p {
     font-size: large;
   }
 
