@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+
 @media screen and (min-width: 320px),
     screen and (min-height: 479px) 
     and (orientation: landscape) {
     body {
         margin: 0rem;
         background-color: white;
+        font-family: 'Gaegu', cursive;
     }
     
     header {
@@ -11,6 +14,35 @@
         width: 100%;
         height: 4rem;
         background-color: black;
+    }
+
+    .visible {
+        display: block;
+        position: absolute;
+        left: 0; /* aside를 왼쪽으로 이동 */
+        top: 4rem; /* aside를 헤더 아래로 이동 */
+        bottom: 0; /* aside의 높이를 꽉 채운다. */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+        color: white;
+        background-color: black;
+        box-shadow: 5px 0 5px gray;
+    }
+
+    header a.profileMenu {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%); 
+        width: 1.5rem;
+        height: 1.5rem;
+        color: transparent;
+        background: linear-gradient(#fff 50%, transparent 50%);
+        background-size: 100% 0.62rem;
     }
     
     header a img {
@@ -35,12 +67,6 @@
     }
     
     aside {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 20%;
-        border: 1px solid black; */
         display: none;
     }
     
@@ -49,8 +75,8 @@
     }
     
     #profileImage {
-        width: 7rem;
-        height: 7rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 15px;
     }
     
@@ -58,9 +84,9 @@
         font-size: 1.3rem;
     }
     
-    /* #profileIntroduction {
+    #profileIntroduction {
         font-size: 1rem;
-    } */
+    }
 
     .goToAnotherBlog {
         font-size: 0.8rem;
@@ -68,15 +94,31 @@
     
     .goToAnotherBlog .friendList {
         list-style: none;
+        padding-left: 0rem;
     }
     
     .friendList li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.6rem;
         text-decoration: none;
-        color: black;
+        color: white;
+    }
+
+    .friendList li a img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.6rem;
     }
     
     article {
         width: 80%;
+    }
+
+    hr {
+        border: none;
+        border-bottom: 1px solid #8C8C8C;
     }
 
     .articleTitle, .articleDate {
@@ -84,9 +126,35 @@
     }
     
     .contentsFrame {
-        overflow: scroll;
+        overflow-x: hidden; /* 가로 스크롤 숨김 */
+        overflow-y: auto; /* 세로 스크롤만 보이도록 설정 */
         height: 69vh;
-        border: 1px solid black;
+        border: 1px solid #8C8C8C;
+    }
+
+    .catAnimation {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999; /* 이미지를 화면 상단에 고정하기 위한 z-index 값 설정 */
+        animation: floatInAndOut 5s ease-in-out; /* 애니메이션 적용 */
+    }
+
+    @keyframes floatInAndOut {
+        0%, 100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+        50% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    .catAnimationImage {
+        max-width: 100%;
+        height: auto;
     }
 
     .contents {
@@ -94,6 +162,30 @@
         flex-direction: column;
         align-items: center; /* 가로 방향 중앙 정렬 */
         justify-content: center; /* 세로 방향 중앙 정렬 */
+    }
+
+    .contents p {
+        text-align: center;
+    }
+
+    .emoji {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .catImg, .video {
+        width: 40%;
+        height: 40%;
+        border-radius: 5px;
+    }
+
+    .talk {
+        font-size: 0.8rem;
+        color: gray;
+    }
+
+    #catFace:hover {
+        content: url("../img/sh_cat_face2.png");
     }
     
     footer {
@@ -117,13 +209,16 @@
 @media screen and (min-width: 768px),
     screen and (min-height: 760px) and (max-height: 1023px) 
     and (orientation: landscape) {
+    header a.profileMenu {
+        display: none;
+    }
+
     .blogBody {
-        /* flex: 1;
-        display: flex; */
         justify-content: space-between;
     }
 
-    aside {
+    .visible {
+        position: static;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -132,35 +227,41 @@
         border-right: 1px solid black;
     }
 
-    .profile {
-        margin-bottom: 3vh;
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+        color: white;
+        border-right: 1px solid black;
+        background-color: black;
+        box-shadow: 5px 0 5px gray;
     }
 
     #profileImage {
         width: 7rem;
         height: 7rem;
-        border-radius: 15px;
     }
 
     #profileName {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    #profileIntroduction {
+        font-size: 1.16rem;
     }
 
     .goToAnotherBlog {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
-    .goToAnotherBlog .friendList {
-        list-style: none;
-    }
-
-    .friendList li a {
-        text-decoration: none;
-        color: black;
+    .friendList li a img {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 
     article {
-        width: 80%;
         margin: 0vh 2.5vw 0vh 2.5vw;
     }
 }
@@ -174,14 +275,19 @@
     }
 
     #profileName {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     
     #profileIntroduction {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .goToAnotherBlog {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .friendList li a img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
