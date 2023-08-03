@@ -267,6 +267,14 @@ li {
     z-index: -10;
   }
 
+  header img{
+    width: 20vw;
+    position: absolute;
+    z-index: 100;
+    top:10px;
+    left: 20px;
+  }
+
   .img_cover {
     display: block;
     width: 100%;
@@ -293,7 +301,7 @@ li {
 
 
   .img_cover_box p:first-child {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -504,6 +512,15 @@ li {
   .wrap {
     margin: 0 auto;
   }
+
+  header img{
+    width: 10vw;
+    position: absolute;
+    z-index: 100;
+    top:10px;
+    left: 20px;
+  }
+
 
   .img_cover {
     background-position: -420px -200px;
