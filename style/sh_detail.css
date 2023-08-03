@@ -132,6 +132,31 @@
         border: 1px solid #8C8C8C;
     }
 
+    .catAnimation {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999; /* 이미지를 화면 상단에 고정하기 위한 z-index 값 설정 */
+        animation: floatInAndOut 5s ease-in-out; /* 애니메이션 적용 */
+    }
+
+    @keyframes floatInAndOut {
+        0%, 100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+        50% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    .catAnimationImage {
+        max-width: 100%;
+        height: auto;
+    }
+
     .contents {
         display: flex;
         flex-direction: column;
