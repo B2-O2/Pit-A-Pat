@@ -67,12 +67,6 @@
     }
     
     aside {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 20%;
-        border-right: 1px solid black; */
         display: none;
     }
     
@@ -195,8 +189,6 @@
     }
 
     .blogBody {
-        /* flex: 1;
-        display: flex; */
         justify-content: space-between;
     }
 
@@ -208,7 +200,6 @@
         text-align: center;
         width: 20%;
         border-right: 1px solid black;
-        /* box-shadow: none; */
     }
 
     aside {
@@ -223,14 +214,9 @@
         box-shadow: 5px 0 5px gray;
     }
 
-    .profile {
-        margin-bottom: 3vh;
-    }
-
     #profileImage {
         width: 7rem;
         height: 7rem;
-        border-radius: 15px;
     }
 
     #profileName {
@@ -245,22 +231,12 @@
         font-size: 1rem;
     }
 
-    .goToAnotherBlog .friendList {
-        list-style: none;
-    }
-
-    .friendList li a {
-        text-decoration: none;
-        color: white;
-    }
-
     .friendList li a img {
         width: 1.25rem;
         height: 1.25rem;
     }
 
     article {
-        width: 80%;
         margin: 0vh 2.5vw 0vh 2.5vw;
     }
 }
