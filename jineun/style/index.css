@@ -48,13 +48,13 @@
 
 	@keyframes changeBackgroundAnimation {
 		0% {
-			background-image: url("../image/진순이헤더.jpg");
+			background-image: url("../image/jinsun_header.jpg");
 		}
 		50% {
-			background-image: url("../image/진돌이헤더.jpeg");
+			background-image: url("../image/jindol_header.jpeg");
 		}
 		100% {
-			background-image: url("../image/진순이헤더.jpg");
+			background-image: url("../image/jinsun_header.jpg");
 		}
 	}
 
@@ -266,6 +266,10 @@
 		height: 44px;
 	}
 
+	#haha{
+		margin-right: 5%;
+	}
+
 	.menu-trigger span {
 		position: absolute;
 		left: 0;
@@ -351,6 +355,10 @@
 	}
 
 	ul#person.responsive {
+		display: none;
+	}
+
+	#haha.responsive{
 		display: none;
 	}
 }
