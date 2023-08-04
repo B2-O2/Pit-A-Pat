@@ -253,7 +253,7 @@ li {
   }
 }
 
-@media (min-width: 340px) {
+@media (min-width: 320px) {
   .wrap {
     margin: 0 auto;
     border: 2px solid #EDEDE9;
