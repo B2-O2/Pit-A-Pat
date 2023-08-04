@@ -134,8 +134,8 @@
 
     .catAnimation {
         position: fixed;
-        top: 50%;
-        left: 50%;
+        top: 16%;
+        left: 34%;
         transform: translate(-50%, -50%);
         z-index: 999; /* 이미지를 화면 상단에 고정하기 위한 z-index 값 설정 */
         animation: floatInAndOut 5s ease-in-out; /* 애니메이션 적용 */
@@ -153,7 +153,7 @@
     }
 
     .catAnimationImage {
-        max-width: 100%;
+        max-width: 30%;
         height: auto;
     }
 
@@ -264,6 +264,11 @@
     article {
         margin: 0vh 2.5vw 0vh 2.5vw;
     }
+
+    .catAnimation {
+        top: 16%;
+        left: 26%;
+    }
 }
 
 @media screen and (min-width: 1024px),
@@ -289,5 +294,10 @@
     .friendList li a img {
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    .catAnimation {
+        top: 16%;
+        left: 19%;
     }
 }
