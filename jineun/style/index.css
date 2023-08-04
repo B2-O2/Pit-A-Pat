@@ -266,6 +266,10 @@
 		height: 44px;
 	}
 
+	#haha{
+		margin-right: 5%;
+	}
+
 	.menu-trigger span {
 		position: absolute;
 		left: 0;
@@ -351,6 +355,10 @@
 	}
 
 	ul#person.responsive {
+		display: none;
+	}
+
+	#haha.responsive{
 		display: none;
 	}
 }
