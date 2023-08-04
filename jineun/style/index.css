@@ -58,13 +58,10 @@
 		}
 	}
 
-	header > h1 {
+	.logo {
 		position: relative;
 		top: 50%;
-		text-align: center;
-		color: black;
-		font-weight: 900;
-		font-size: 3rem;
+		left: 40%;
 	}
 
 	.header_nav {
