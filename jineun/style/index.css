@@ -44,6 +44,7 @@
 		background-color: rgba(255, 255, 255, 0.7);
 		cursor: pointer;
 		border-radius: 5px;
+
 	}
 
 	@keyframes changeBackgroundAnimation {
@@ -195,6 +196,10 @@
 		font-size: 2rem;
 	}
 
+	.change-background{
+		background-position: -500px -500px;
+	}
+
 	.header_nav {
 		background: #f6f8f9;
 		width: 100%;
@@ -246,10 +251,15 @@
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	header > h1 {
 		color: white;
 	}
+
+	.change-background{
+		background-position: -900px -500px;
+	}
+
 	.menu-trigger {
 		margin-left: 35%;
 	}
