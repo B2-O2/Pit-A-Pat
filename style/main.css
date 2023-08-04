@@ -31,7 +31,7 @@
     display: inline-block;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 
-	background-image: url("../image/jinsun_header.jpg");
+	background-image: url("../img/jinsun_header.jpg");
     animation: changeBackgroundAnimation 5s infinite;
 
     width: 100%;
@@ -48,13 +48,13 @@
 
   @keyframes changeBackgroundAnimation {
     0% {
-      background-image: url("../image/jinsun_header.jpg");
+      background-image: url("../img/jinsun_header.jpg");
     }
     50% {
-      background-image: url("../image/jindol_header.jpeg");
+      background-image: url("../img/jindol_header.jpeg");
     }
     100% {
-      background-image: url("../image/jinsun_header.jpg");
+      background-image: url("../img//jinsun_header.jpg");
     }
   }
 
