@@ -246,7 +246,7 @@
 	}
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 500px) {
 	header > h1 {
 		color: white;
 	}
@@ -266,7 +266,7 @@
 		height: 44px;
 	}
 
-	#haha{
+	#haha {
 		margin-right: 5%;
 	}
 
@@ -295,6 +295,27 @@
 		display: block;
 	}
 
+	.title_image {
+		object-fit: cover;
+	}
+	.header_ul {
+		padding-left: 2em;
+		margin: 0;
+	}
+	.header_li > a > h4 {
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+	}
+	.header_li a {
+		padding: 0;
+		margin: 0;
+	}
+	.header_li {
+		margin: 0;
+		padding: 0;
+	}
+
 	#person {
 		display: inline-block;
 		background-color: #f6f8f9;
@@ -307,9 +328,17 @@
 		padding-left: 0;
 		padding-right: 5%;
 	}
+	main div.wrap2 {
+		top: 0;
+	}
 	#person li a {
 		display: inline-block;
+		font-size: 0.8em;
 		width: 100%;
+	}
+
+	ul#person.header_ul {
+		padding: 0;
 	}
 
 	#person > .header_li {
@@ -342,7 +371,8 @@
 	}
 
 	.title_info li {
-		font-size: 1.3em;
+		font-size: 0.5em;
+		margin-right: 20%;
 	}
 
 	section ~ div {
@@ -358,7 +388,7 @@
 		display: none;
 	}
 
-	#haha.responsive{
+	#haha.responsive {
 		display: none;
 	}
 }
