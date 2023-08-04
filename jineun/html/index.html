@@ -1,152 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/index.css" />
+    <!-- <link rel="stylesheet" href="../script/hambuger.js"> -->
+    <script src="../script/hambuger.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="../style/index.css">
-	<!-- <link rel="stylesheet" href="../script/hambuger.js"> -->
-	<script src="../script/hambuger.js"></script>
-</head>
+  <body>
+    <div id="wrap">
+      <header class="change-background">
+        <img class="logo" src="../../img/logo-white.png" alt="" />
+      </header>
 
-<body>
+      <nav class="header_nav">
+        <div>
+          <ul class="header_ul">
+            <li class="header_li">
+              <a href="#">
+                <h4 class="home">HOME</h4>
+              </a>
+            </li>
+          </ul>
 
-	<div id="wrap">
-		<header class="change-background">
+          <a class="menu-trigger" id="haha" href="#" onclick="onMenuClick()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
 
-			<img class="logo" src="../../img/logo-white.png" alt="">
+          <ul class="header_ul responsive" id="person">
+            <li class="header_li"><a href="">진은</a></li>
+            <li class="header_li"><a href="../../subin/index.html">수빈</a></li>
+            <li class="header_li"><a href="../../sh_detail.html">상희</a></li>
+            <li class="header_li">
+              <a href="../../jeongmin_detail.html">정민</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div class="wrap2">
+          <section class="title_section">
+            <img
+              class="title_image"
+              src="../image/진돌이.jpeg"
+              alt="대표이미지"
+            />
+            <div class="title_info_div">
+              <ul class="title_info">
+                <li>이름: 진돌이</li>
+                <li>묘종: 러시안블루</li>
+                <li>좋아하는거: 집사 깨물기</li>
+              </ul>
+              <img
+                class="account_img"
+                src="../image/jineun_profile.png"
+                alt="대표이미지"
+              />
+            </div>
+          </section>
 
-		</header>
+          <section class="title_section">
+            <img
+              class="title_image"
+              src="../image/진순이.jpg"
+              alt="대표이미지"
+            />
+            <div class="title_info_div">
+              <ul class="title_info">
+                <li>이름: 진순이</li>
+                <li>묘종: 잡종</li>
+                <li>좋아하는거: 츄르</li>
+              </ul>
+              <img
+                class="account_img"
+                src="../image/jineun_profile.png"
+                alt="대표이미지"
+              />
+            </div>
+          </section>
 
-		<nav class="header_nav">
-			<div>
-				<ul class="header_ul">
-					<li class="header_li">
-						<a href="#">
-							<h4 class="home">HOME</h4>
-						</a>
-					</li>
-				</ul>
+          <section class="title_section">
+            <img
+              class="title_image"
+              src="../../subin/mainPhoto.jpg"
+              alt="대표이미지"
+            />
+            <div class="title_info_div">
+              <ul class="title_info">
+                <li>이름: 아미</li>
+                <li>견종: 왤시코기</li>
+                <li>좋아하는거: 산책</li>
+              </ul>
+              <img
+                class="account_img"
+                src="../../subin/myPhoto.jpg"
+                alt="대표이미지"
+              />
+            </div>
+          </section>
 
-				<a class="menu-trigger" id="haha" href="#" onclick="onMenuClick()">
-					<span></span>
-					<span></span>
-					<span></span>
-				</a>
+          <section class="title_section">
+            <img
+              class="title_image"
+              src="../../img/sh_cat4.jpg"
+              alt="대표이미지"
+            />
+            <div class="title_info_div">
+              <ul class="title_info">
+                <li>이름: 뀨</li>
+                <li>묘종: 러시안블루</li>
+                <li>좋아하는거: 츄르</li>
+              </ul>
+              <img
+                class="account_img"
+                src="../image/sh_main_profile.png"
+                alt="대표이미지"
+              />
+            </div>
+          </section>
 
-				<ul class="header_ul responsive" id="person">
-					<li class="header_li"><a href="">진은</a></li>
-					<li class="header_li"><a href="../../subin/index.html">수빈</a></li>
-					<li class="header_li"><a href="../../sh_detail.html">상희</a></li>
-					<li class="header_li"><a href="../../jeongmin_detail.html">정민</a></li>
-				</ul>
-			</div>
-		</nav>
-		<main>
+          <section class="title_section">
+            <img
+              class="title_image"
+              src="../../img/jm_profile.jpg"
+              alt="대표이미지"
+            />
+            <div class="title_info_div">
+              <ul class="title_info">
+                <li>이름: 새치미</li>
+                <li>묘종: 그냥 고양이</li>
+                <li>좋아하는거: 차오 츄르</li>
+              </ul>
+              <img
+                class="account_img"
+                src="../image/jm_img.jpg"
+                alt="대표이미지"
+              />
+            </div>
+          </section>
 
-			<div class="wrap2">
-				<section class="title_section">
-					<img class="title_image" src="../image/진돌이.jpeg" alt="대표이미지">
-					<div class="title_info_div">
-						<ul class="title_info">
-							<li>이름: 진돌이</li>
-							<li>묘종: 러시안블루</li>
-							<li>좋아하는거: 집사 깨물기</li>
-						</ul>
-						<img class="account_img" src="../image/jineun_profile.png" alt="대표이미지">
-					</div>
-				</section>
+          <section class="title_section">
+            <img
+              class="title_image"
+              src="../image/진돌이.jpeg"
+              alt="대표이미지"
+            />
+            <div class="title_info_div">
+              <ul class="title_info">
+                <li>이름: 아미</li>
+                <li>견종: 왤시코기</li>
+                <li>좋아하는거: 산책</li>
+              </ul>
+              <img class="account_img" src="profile.png" alt="대표이미지" />
+            </div>
+          </section>
 
-				<section class="title_section">
-					<img class="title_image" src="../image/진순이.jpg" alt="대표이미지">
-					<div class="title_info_div">
-						<ul class="title_info">
-							<li>이름: 진순이</li>
-							<li>묘종: 잡종</li>
-							<li>좋아하는거: 츄르</li>
-						</ul>
-						<img class="account_img" src="../image/jineun_profile.png" alt="대표이미지">
-					</div>
-				</section>
+          <section class="title_section">
+            <img
+              class="title_image"
+              src="../image/진순이.jpg"
+              alt="대표이미지"
+            />
+            <div class="title_info_div">
+              <ul class="title_info">
+                <li>이름: 아미</li>
+                <li>견종: 왤시코기</li>
+                <li>좋아하는거: 산책</li>
+              </ul>
+              <img class="account_img" src="profile.png" alt="대표이미지" />
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div></div>
+        <h2>밥은 주고 출근합시다</h2>
 
-
-				<section class="title_section">
-					<img class="title_image" src="../../subin/mainPhoto.jpg" alt="대표이미지">
-					<div class="title_info_div">
-						<ul class="title_info">
-							<li>이름: 아미</li>
-							<li>견종: 왤시코기</li>
-							<li>좋아하는거: 산책</li>
-						</ul>
-						<img class="account_img" src="../../subin/myPhoto.jpg" alt="대표이미지">
-					</div>
-				</section>
-
-				<section class="title_section">
-					<img class="title_image" src="../../img/sh_cat4.jpg" alt="대표이미지">
-					<div class="title_info_div">
-						<ul class="title_info">
-							<li>이름: 뀨</li>
-							<li>묘종: 러시안블루</li>
-							<li>좋아하는거: 츄르</li>
-						</ul>
-						<img class="account_img" src="../image/sh_main_profile.png" alt="대표이미지">
-					</div>
-				</section>
-
-				<section class="title_section">
-					<img class="title_image" src="../../img/jm_profile.jpg" alt="대표이미지">
-					<div class="title_info_div">
-						<ul class="title_info">
-							<li>이름: 새치미</li>
-							<li>묘종: 그냥 고양이</li>
-							<li>좋아하는거: 차오 츄르</li>
-						</ul>
-						<img class="account_img" src="../image/jm_img.jpg" alt="대표이미지">
-					</div>
-				</section>
-
-				<section class="title_section">
-					<img class="title_image" src="../image/진돌이.jpeg" alt="대표이미지">
-					<div class="title_info_div">
-						<ul class="title_info">
-							<li>이름: 아미</li>
-							<li>견종: 왤시코기</li>
-							<li>좋아하는거: 산책</li>
-						</ul>
-						<img class="account_img" src="profile.png" alt="대표이미지">
-					</div>
-				</section>
-
-				<section class="title_section">
-					<img class="title_image" src="../image/진순이.jpg" alt="대표이미지">
-					<div class="title_info_div">
-						<ul class="title_info">
-							<li>이름: 아미</li>
-							<li>견종: 왤시코기</li>
-							<li>좋아하는거: 산책</li>
-						</ul>
-						<img class="account_img" src="profile.png" alt="대표이미지">
-					</div>
-				</section>
-
-			</div>
-
-		</main>
-		<footer>
-			<div>
-
-			</div>
-			<h2>밥은 주고 출근합시다</h2>
-
-			<img class="cat" src="../image/cat.jpeg" alt="cat">
-
-
-		</footer>
-
-
-	</div>
-</body>
-
+        <img class="cat" src="../image/cat.jpeg" alt="cat" />
+      </footer>
+    </div>
+  </body>
 </html>
