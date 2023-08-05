@@ -35,8 +35,8 @@
 
 | 이름   | 개발 파트               | 파일명                                    |
 | ------ | ----------------------- | ----------------------------------------- |
-| 박상희 | 본인 블로그 상세 페이지 | sh_detail.html, sh_detail.css             |
-| 박진은 | 메인 페이지             | main.html, main.css                       |
+| 박상희 | 본인 블로그 상세 페이지 | sh_detail.html, sh_detail.css, sh_detail.js |
+| 박진은 | 메인 페이지             | main.html, main.css, hambuger.js         |
 | 안정민 | 본인 블로그 상세 페이지 | jeongmin_detail.html, jeongmin_detail.css |
 | 이수빈 | 본인 블로그 상세 페이지 | subin_detail.html, subin_detail.css       |
 
