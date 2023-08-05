@@ -118,6 +118,17 @@
 - 메인 페이지 로고 및 카드 텍스트 정렬
 - 마지막 디자인 점검 및 수정
 
+#### Trouble Shooting
+
+- Trouble
+  : 로드시 로딩 스크린 개발 이후 타 요소 애니메이션 적용 시 DEFAULT 0초에 적용되어 애니메이션이 적용되지 않는 것처럼 보이는 문제
+- Shooting  
+  : 애니메이션 요소 시작시간 설정
+<br/>
+- Trouble
+  : JavaScript를 사용하지 않고 반응형 게이지바 구현
+- Shooting
+  : 2개의 div를 사용하여 겹친 후 width를 부모요소에 적용하고 애니메이션을 적용하여 구현, margin을 vw로 주어 각 요소의 height와 무관하게 반응형으로 구현 
 <br/>
 
 ### Together
