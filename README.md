@@ -127,8 +127,8 @@
 <br/>
 - Trouble
   : JavaScript를 사용하지 않고 반응형 게이지바 구현
-- Shooting
-  : 2개의 div를 사용하여 겹친 후 width를 부모요소에 적용하고 애니메이션을 적용하여 구현, margin을 vw로 주어 각 요소의 height와 무관하게 반응형으로 구현 
+- Shooting  
+  : 2개의 div를 사용하여 겹친 후 width를 부모요소에 적용하고 애니메이션을 적용하여 구현, margin을 vw로 주어 각 요소의 height와 무관하게 반응형으로 구현
 <br/>
 
 ### Together
